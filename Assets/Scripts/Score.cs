@@ -17,7 +17,7 @@ public class Score : MonoBehaviour {
 
     {
 
-        currentValue = currentValue = _toChange;
+        currentValue = currentValue + _toChange;
         displayText.text = currentValue.ToString();
 
     }
