@@ -7,7 +7,8 @@ public class Critter : MonoBehaviour {
     public Vector2 lowerRange;
     public Vector2 upperRange;
 
-    public Score scoreDisplay; 
+    public Score scoreDisplay;
+    public Timer timer;
 
     public int pointValue = 2;
 
@@ -20,6 +21,11 @@ public class Critter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (timer.IsTimerRunning()== false)
+        {
+
+            Destroy(gameObject);
+        }
 		
 	}
 
